@@ -1,0 +1,59 @@
+
+<% include header %>
+<% include nav %>
+
+	<div id="splash"><img src="images/pics01.jpg" width="980" height="300" alt="" /></div>
+	<div id="page">
+		<div id="content">
+			<div class="contentbg">
+				<div class="post">
+					<h2 class="title"><a href="#">View All Records</a></h2>
+                    </div>
+				</div>
+    <table border="2" cellspacing="10" cellpadding="10">
+    <tr>
+        <th>Roll number</th>
+        <th>Name</th>
+        <th>Physics marks</th>
+        <th>Chemistry marks</th>
+        <th>Maths marks</th>
+        <th>Action</th>
+    </tr>    
+    
+    <%
+        for(i=0;i<data.length;i++)
+        {
+    %>    
+    <tr>
+        <td><%= data[i].rno %></td>
+        <td><%= data[i].nm %></td>
+        <td><%= data[i].phy %></td>
+        <td><%= data[i].che %></td>
+        <td><%= data[i].mat %></td>
+        <td><a href="/delete?rno=<%= data[i].rno %>">DELETE</a><a href="/update?rno=<%= data[i].rno %>">UPDATE</a></td>
+	</tr>
+	<% } %>				
+  </table>
+
+				
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Aliquam tempus</h2>
+						<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+
+<% include footer %>

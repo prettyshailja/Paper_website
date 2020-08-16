@@ -1,0 +1,50 @@
+
+<% include header %>
+<% include nav %>
+
+	<div id="splash"><img src="../images/pics01.jpg" width="980" height="300" alt="" /></div>
+	<div id="page">
+		<div id="content">
+			<div class="contentbg">
+				<div class="post">
+					<h2 class="title"><a href="#">Upload profile pic. here!!!</a></h2>
+
+				<form action="/users/upload" method="post" enctype="multipart/form-data">
+				
+				Select file <input type="file" name="myfile"/>
+				
+				<br/><br/>
+				
+				<input type="submit" name="s" value="Upload"/>
+				
+				</from>
+    <h1><a href='/users/viewupload'>View all uploaded record</a></h1>
+    
+    <h1><%= o %></h1>
+    
+					</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Aliquam tempus</h2>
+						<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+
+<% include footer %>

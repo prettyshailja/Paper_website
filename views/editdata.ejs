@@ -1,0 +1,50 @@
+
+<% include header %>
+<% include nav %>
+
+	<div id="splash"><img src="images/pics01.jpg" width="980" height="300" alt="" /></div>
+	<div id="page">
+		<div id="content">
+			<div class="contentbg">
+				<div class="post">
+					<h2 class="title"><a href="#">Edit Record here!!!</a></h2>
+
+		        <form method="post" action="/editdata">
+		        Roll number <input readonly type="text" name="rno" value="<%= data[0].rno %>"/>
+		        <br/><br/>
+		        Name <input type="text" name="nm" value="<%= data[0].name %>"/>
+		        <br/><br/>
+		        Physics Marks <input type="text" name="phy" value="<%= data[0].phy %>"/>
+		        <br/><br/>
+		        Chemistry Marks <input type="text" name="che" value="<%= data[0].che %>"/>
+		        <br/><br/>
+		        Maths Marks <input type="text" name="mat" value="<%= data[0].mat %>"/>
+		        <br/><br/>
+		        <input type="submit" name="s" value="Update"/>
+		        </form>
+		     		</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Aliquam tempus</h2>
+						<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+
+<% include footer %>

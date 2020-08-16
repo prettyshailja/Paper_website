@@ -1,0 +1,58 @@
+<% include header %>
+<% include nav %>
+
+	<div id="splash"><img src="images/pics01.jpg" width="980" height="300" alt="" /></div>
+	<div id="page">
+		<div id="content">
+			<div class="contentbg">
+				<div class="post">
+					<h2 class="title"><a href="#">Register page</a></h2>
+
+		        <form method="post" action="/register">
+		        Roll number <input type="text" name="rno"/>
+		        <br/><br/>
+		        Name <input type="text" name="nm"/>
+		        <br/><br/>
+		        Physics Marks <input type="text" name="phy"/>
+		        <br/><br/>
+		        Chemistry Marks <input type="text" name="che"/>
+		        <br/><br/>
+		        Maths Marks <input type="text" name="mat"/>
+		        <br/><br/>
+		        Class 
+		        <select name="myclass">
+		            <option>select class</option>
+		            <option>11th</option>
+		            <option>12th</option>
+		        </select>
+		        <br/><br/>
+		        <input type="submit" name="s" value="Register"/>
+		        </form>
+		        <h1><%= output %></h1>
+                <h1><a href="/viewall">View All Records</a></h1>
+					</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Aliquam tempus</h2>
+						<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+
+<% include footer %>

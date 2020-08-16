@@ -1,0 +1,48 @@
+
+<% include header %>
+<% include nav %>
+
+	<div id="splash"><img src="images/pics01.jpg" width="980" height="300" alt="" /></div>
+	<div id="page">
+		<div id="content">
+			<div class="contentbg">
+				<div class="post">
+					<h2 class="title"><a href="#">Login page</a></h2>
+
+    		        <form method="post" action="/login">
+		        Username <input type="text" name="unm" value="<%= data.unm %>"/>
+		        <br/><br/>
+		        Password <input type="password" name="pass" value="<%= data.pass %>"/>
+		        <br/><br/>
+		        <input type="checkbox" name="chk" value='chk'/> Remember me?
+		        <br/><br/>
+		        <input type="submit" name="s" value="Login"/>
+		        </form>
+
+
+					</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Aliquam tempus</h2>
+						<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+
+<% include footer %>
